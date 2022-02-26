@@ -2,8 +2,8 @@
 
 
 navSlide = () => {
-    document.querySelector('.nav-links').style.display = 'flex';
-    document.querySelector('.nav-active').style = 'transform: translateX(100%)';
+   // document.querySelector('.nav-links').style.display = 'flex';
+    //document.querySelector('.nav-active').style = 'transform: translateX(100%)';
 
     
 }
@@ -13,11 +13,21 @@ navSlide = () => {
 
 
 
-document.querySelector('.burger').addEventListener('click', navSlide);
+const toggleNavBarHandler = (evt) => {
+    
+    const burger = evt.currentTarget;
+    burger.classList.toggle('is-open');
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('is-open');
+
+}
+
+document.querySelector('.burger').addEventListener('click', toggleNavBarHandler );
+// document.querySelector('.burger').addEventListener('click', navSlide);
 // document.querySelector('.nav-links').addEventListener('click'. navSlide);
 
 
-navSlide();
+// navSlide();
 
     // let x = document.querySelector('.nav-links');
     // if (x.className === "nav-links") {
