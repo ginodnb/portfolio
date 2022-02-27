@@ -104,9 +104,11 @@ nav {
 }
 nav .burger i {
     width: 100px;
-    top: 18px;
+    top: 2vh;
     color: rgb(232, 232, 245);
     font-size: 2rem;
+    right: 0;
+
 }
 
 .burger {
