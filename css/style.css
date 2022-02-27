@@ -104,12 +104,14 @@ nav {
 }
 nav .burger i {
     width: 100px;
-    top: 10px;
+    top: 18px;
     color: rgb(232, 232, 245);
+    font-size: 2rem;
 }
 
 .burger {
     display: none;
+
 }
 
 .burger-close { display: none; }
@@ -347,7 +349,9 @@ nav .burger i {
     .burger {
         display: block;
         cursor: pointer;
+        
     }
+
     .nav-active {
         transform: translateX(100%);
     }
